@@ -1,15 +1,12 @@
 import React from 'react'
 
-function ProfileCard(writter) {
+function ProfileCard({card}) {
   return (
-    <div className='card'>
-        <div className='textgroup'>
-            <h3>{writter.name}</h3>
-            <p>{writter.email}</p>
-            <p>{writter.phone}</p>
-            <button className='actionBtn'>Read more</button>
+    <div className="greencard">
+        <h3>{card.firstname} {card.lastname}</h3>
+        <p>{card.email}</p>
+        <p>{card.phone}</p>
 
-        </div>
     </div>
   )
 }
